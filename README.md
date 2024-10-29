@@ -1,38 +1,28 @@
-**!! Atenção: Renomeie o seu repositório para (Tema)_(NomeDoProjeto). !!** 
+# Exercício do Juiz Online LeetCode
 
-Temas:
- - Grafos1
- - Grafos2
- - PD
- - D&C
- - Greed
- - Final 
- 
- **!! *Não coloque os nomes dos alunos no título do repositório*. Exemplo de título correto: Grafos2_Labirinto-do-Minotauro !!**
- 
- (Apague essa seção)
-
-# NomedoProjeto
-
-**Número da Lista**: X<br>
-**Conteúdo da Disciplina**: XXXXXXXXXX<br>
+**Número da Lista**: 49<br>
+**Conteúdo da Disciplina**: Grafos 1<br>
 
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 17/0008291  |  Cristian Furtado |
 | xx/xxxxxx  |  xxxx xxxx xxxxx |
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+Serão realizados 3 exercícios na plataforma no LeetCode que são:
+
+- <a href="https://leetcode.com/problems/get-watched-videos-by-your-friends/">Veja quais vídeos foram assistidos pelos seus amigos (Médio)</a>
+- <a href="https://leetcode.com/problems/second-minimum-time-to-reach-destination/description/">Segundo tempo mínimo para se chegar ao destino (Difícil)</a>
+- <a href="https://leetcode.com/problems/number-of-provinces/description/">Número de províncias (Médio)</a>
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em funcionamento.
 
 ## Instalação 
-**Linguagem**: xxxxxx<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+**Linguagem**: Python 3.10.*<br>
+
+Necessário ter instalado na máquina versão do Python 3.10.* para que sejam executados os exercícios.
 
 ## Uso 
 Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
@@ -40,6 +30,6 @@ Explique como usar seu projeto caso haja algum passo a passo após o comando de 
 ## Outros 
 Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
 
-
+## Link do vídeo com explicação 
 
 
