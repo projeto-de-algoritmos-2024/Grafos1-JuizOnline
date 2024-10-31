@@ -1,43 +1,43 @@
 from collections import deque, defaultdict
 
+# Necessária a criação da classe para que o exercício fosse aceito
+class Solution:      
+    def watchedVideosByFriends(self, videos_assistidos: dict, amigos: dict, meu_id: int, nivel_desejado: int) -> list[str]:
+        """
+        Implementação do algortimo BFS para encontrar o menor caminho, porém agora se precisa achar nós em um que estão em um mesmo nível a partir de um nó (usuário com seu ID) inicial
+        """
 
-def watchedVideosByFriends(videos_assistidos: dict, amigos: dict, meu_id: int = 0, nivel_desejado: int = 0) -> list[str]:
-    contagem_videos = defaultdict(int)
+        contagem_videos = defaultdict(int)
 
-    amigos_no_nivel = bfs_amigos(amigos, meu_id, nivel_desejado)    # Descobre quantos usuários tem em tal nível do grafo, utilizando BFS
+        # Já coloca o nó (usuário) inicial na fila e na lista de elementos visitados
+        lista_visitados = set([meu_id])
+        fila_prox = deque([meu_id])
+        amigos_no_nivel = []
 
-    for amigo in amigos_no_nivel:
-        for video in videos_assistidos[amigo]:
-            contagem_videos[video] += 1
+        nivel_atual = 0
 
-    # Ordena os resultados em ordem alfabética e por quantidade, retornando apenas os nome dos filmes
-    resultado = sorted(contagem_videos.items(), key=lambda x: (x[1], x[0]))
+        while fila_prox:
+            if nivel_atual == nivel_desejado:
+                amigos_no_nivel.extend(fila_prox)   # A fila fica com os elementos de mesmo nível
+                break
 
-    return [video for video, _ in resultado]
+            qtd_amigos_nivel = len(fila_prox)
+            
+            for _ in range(qtd_amigos_nivel):
+                noh_u = fila_prox.popleft()
 
-def bfs_amigos(grafo : dict, node_start: int, nivel_desejado: int):
-    lista_visitados = set([node_start])
-    fila_prox = deque([node_start])
-    filmes_vistos = []
+                for amigo_vizinho in amigos[noh_u]:
+                    if amigo_vizinho not in lista_visitados:
+                        lista_visitados.add(amigo_vizinho)
+                        fila_prox.append(amigo_vizinho)
 
-    nivel_atual = 0
+            nivel_atual += 1
 
-    # Aplica o algoritmo de BFS, porém para a busca quando se chega ao nível desejado
-    while fila_prox:
-        if nivel_atual == nivel_desejado:
-            filmes_vistos.extend(fila_prox)
-            break
+        for amigo in amigos_no_nivel:
+            for video in videos_assistidos[amigo]:
+                contagem_videos[video] += 1
 
-        qtd_cidades_nivel = len(fila_prox)
-        
-        for _ in range(qtd_cidades_nivel):
-            noh_u = fila_prox.popleft()
+        # Ordena elementos no formato (nome, qtd_vezes) por ordem de quantidade e alfabética
+        resultado = sorted(contagem_videos.items(), key=lambda x: (x[1], x[0]))
 
-            for noh_vizinho in grafo[noh_u]:
-                if noh_vizinho not in lista_visitados:
-                    lista_visitados.add(noh_vizinho)
-                    fila_prox.append(noh_vizinho)
-
-        nivel_atual += 1
-    
-    return filmes_vistos
+        return [video for video, _ in resultado]

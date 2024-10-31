@@ -17,12 +17,13 @@ Serão realizados 3 exercícios na plataforma no LeetCode que são:
 - <a href="https://leetcode.com/problems/number-of-provinces/description/">Número de províncias (Médio)</a>
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+![Aceite do exercício 1311](./imgs/accepted_1311.png "Aceite do exercício 1311")
+
 
 ## Instalação 
 **Linguagem**: Python 3.10.*<br>
 
-Necessário ter instalado na máquina versão do Python 3.10.* para que sejam executados os exercícios.
+Necessário ter instalado na máquina versão do Python 3.10.* para que sejam executados os exercícios e uma conta no site LeetCode.
 
 ## Uso 
 Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
