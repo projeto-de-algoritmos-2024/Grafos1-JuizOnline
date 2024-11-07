@@ -19,6 +19,8 @@ Serão realizados 3 exercícios na plataforma no LeetCode que são:
 ## Screenshots
 ![Aceite do exercício 1311](./imgs/accepted_1311.png "Aceite do exercício 1311")
 
+![Aceite do exercício 0547](./imgs/accepted_0547.png "Aceite do exercício 0547")
+
 
 ## Instalação 
 **Linguagem**: Python 3.10.*<br>
