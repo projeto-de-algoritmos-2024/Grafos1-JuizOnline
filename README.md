@@ -21,6 +21,8 @@ Serão realizados 3 exercícios na plataforma no LeetCode que são:
 
 ![Aceite do exercício 0547](./imgs/accepted_0547.png "Aceite do exercício 0547")
 
+![Aceite do exercício HARD](./imgs/photo.jpg "Aceite do exercício HARD")
+
 
 ## Instalação 
 **Linguagem**: Python 3.10.*<br>
