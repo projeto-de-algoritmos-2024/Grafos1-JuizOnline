@@ -7,7 +7,7 @@
 |Matrícula | Aluno |
 | -- | -- |
 | 17/0008291  |  Cristian Furtado |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 21/1041043 |  Juan Pablo |
 
 ## Sobre 
 Serão realizados 3 exercícios na plataforma no LeetCode que são:
