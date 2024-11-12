@@ -21,7 +21,7 @@ Serão realizados 3 exercícios na plataforma no LeetCode que são:
 
 ![Aceite do exercício 0547](./imgs/accepted_0547.png "Aceite do exercício 0547")
 
-![Aceite do exercício HARD](./imgs/photo.jpg "Aceite do exercício HARD")
+![Aceite do exercício HARD](./imgs/accepted_2045.jpg "Aceite do exercício 2045")
 
 
 ## Instalação 
@@ -35,7 +35,9 @@ Explique como usar seu projeto caso haja algum passo a passo após o comando de 
 ## Outros 
 Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
 
-## Link do vídeo com explicação 
-https://drive.google.com/file/d/13-HNb0C25ff0Kf5K_QTXgd4fL4g1siFi/view?usp=sharing
+## Links dos vídeos com explicação
+<a href="https://drive.google.com/file/d/13-HNb0C25ff0Kf5K_QTXgd4fL4g1siFi/view?usp=sharing">Resolução do exercício 2045</a>
 
+<a href="./videos/0547_exercicio_video.mp4">Resolução do exercício 0547</a>
 
+<a href="./videos/1311_exercicio_video.mp4">Resolução do exercício 1311</a>
